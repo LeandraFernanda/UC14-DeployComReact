@@ -1,0 +1,58 @@
+/* --------------CARD PRINCIPAL -------------- */
+.card-jogador {
+    background: #111827;
+    color:#e5e7eb;
+    border:1px solid #374151; /* 1px borda fina de forma sólida em um tom escuro*/
+    border-radius: 16px; /* bordas arredondadas */
+    padding: 24px; /* espaçamento interno */
+    width: 320px; /* largura fixa */
+    transition:transform .15s ease, box-shadow .15s ease; /* transições suaves para transformações e sombras ao passar o mouse */
+
+}
+.card-jogador:hover {
+    transform: translateY(-4px); /* eleva o card ao passar o mouse */
+    box-shadow: 0 10px 24px  rgba(0, 0, 0, 0.35); /* sombra mais pronunciada ao passar o mouse */
+    
+}/* --------------CABEÇALHO DO CARD  -------------- */
+.cj-cabeçalho {
+    display: flex; /* usa flexbox para layout */
+    align-items: center; /* alinha itens verticalmente ao centro */
+    margin-bottom: 14px; /* espaçamento inferior */
+    gap: 16px; /* espaçamento entre itens */
+}
+/* --------------IMAGEM DO JOGADOR -------------- */
+.cj-imagem {
+    width: 90px; /* largura fixa */
+    height: 90px; /* altura fixa */
+    border-radius: 50%; /* imagem circular */
+    object-fit: cover; /* cobre o contêiner sem distorcer */
+    border: 3px solid #243045; /* borda ao redor da imagem */
+
+
+}
+/* -------------- TEXTO PRINCIPAL -------------- */
+.cj-info .cj-nome {
+    font-size: 1.3rem; /* tamanho da fonte maior */
+    font-weight: 600; /* fonte semi-negrito */
+    margin: 0; /* remove margem padrão */
+}
+/* -------------- ETIQUETA DE POSICAO -------------- */
+.cj-etiqueta{
+    display: inline-block; /* exibe como bloco em linha */
+    background: rgba(59, 130, 246,0.15 alpha); /* fundo azul claro com transparência */
+    border: 1px solid #22314a; /* borda azul */
+    color: aliceblue; /* cor do texto branca */
+    padding: 4px 12px; /* espaçamento interno */
+    border-radius: 9999px; /* bordas totalmente arredondadas */
+    font-size: 0.9rem; /* tamanho da fonte menor */
+    font-weight: 500; /* fonte média */
+    margin-top: 6px; /* espaçamento superior */
+
+}
+/* -------------- INFORMAÇÕES DO RODAPÉ -------------- */
+.cj-meta {
+    display: flex; /* usa flexbox para layout */
+    justify-content: space-between; /* espaça os itens igualmente */
+    margin-top: 14px; /* espaçamento superior */
+    font-size: 1rem; /* tamanho da fonte padrão */
+}
